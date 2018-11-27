@@ -1,48 +1,30 @@
 import React,{Component} from 'react';
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 
+import ListItem from './src/components/ListItem/ListItem';
+import DogInput from './src/components/DogInput/DogInput';
+import DogList from './src/components/DogList/DogList';
+
+
 export default class App extends Component {
+  
   state = {
-    dogName: "",
     dogs:[]
   };
 
-  dogNameChangedHandler = val => {
-     this.setState({
-       dogName:val
-     });
-  };
-
-  dogSubmitHandler = () => {
-    if(this.state.dogName.trim() === ""){
-      return;
-    }
-
+  dogAddedHandler = dogName => {   
     this.setState(prevState => {
       return{
-        dogs: prevState.dogs.concat(prevState.dogName)
+        dogs: prevState.dogs.concat(dogName)
       };
     });
   };
 
   render() {
-    const dogsOutput = this.state.dogs.map((dog,i) => (
-      <Text key={i}>{dog}</Text>
-    ));
     return (
       <View style={styles.container}>
-        <View style={styles.inputContainer}>
-            <TextInput     
-              placeholder="An awesome dog"
-              value={this.state.dogName}
-              onChangeText={this.dogNameChangedHandler}
-              style={styles.dogInput}
-            />
-            <Button title="Add"  style={styles.dogButton} onPress={this.dogSubmitHandler}/>
-          </View>
-          <View>
-            {dogsOutput}
-          </View>
+        <DogInput onDogAdded={this.dogAddedHandler} ></DogInput> 
+        <DogList dogs={this.state.dogs}></DogList>
       </View>
     );
   }
@@ -56,18 +38,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-start',
   },
-  inputContainer:{
-    //flex: 1,
-    width:"100%",
-    flexDirection:"row",
-    justifyContent:"space-between",
-    alignItems:"center"
-  },
-  dogInput:{
-    width:"70%"
-  },
-  dogButton:{
-    width:"30%"
-  },
-
 });
