@@ -20,11 +20,24 @@ export default class App extends Component {
     });
   };
 
+  dogDeletedHandler = index => {
+    this.setState(prevState => {
+        return{
+          dogs: prevState.dogs.filter((dog, i) => {
+            return i !== index;
+          })
+        };
+    });
+  }
+
   render() {
     return (
       <View style={styles.container}>
         <DogInput onDogAdded={this.dogAddedHandler} ></DogInput> 
-        <DogList dogs={this.state.dogs}></DogList>
+        <DogList 
+          dogs={this.state.dogs}
+          onItemDeleted = {this.dogDeletedHandler}
+        />
       </View>
     );
   }
