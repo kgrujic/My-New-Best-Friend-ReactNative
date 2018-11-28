@@ -7,6 +7,7 @@ class PlaceInput extends Component{
       dogName: ""
   };
 
+
   dogNameChangedHandler = val => {
       this.setState({
       dogName:val
