@@ -1,21 +1,20 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { FlatList, StyleSheet } from 'react-native';
 
 import ListItem from '../ListItem/ListItem';
 
-const placeList = (props) => {
-    const dogsOutput = props.dogs.map((dog,i) => (
-        <ListItem 
-        key={i}
-        dogName={dog}
-        onItemPressed={() => props.onItemDeleted(i)}
-        />
-    ));
+const dogList = (props) => {
 
     return(
-        <View style={styles.listContainer}>
-            {dogsOutput}
-        </View>
+        <FlatList style={styles.listContainer}
+            data={props.dogs}
+            renderItem={(info) =>(
+                <ListItem 
+                    dogName={info.item.value}
+                    onItemPressed={() => props.onItemDeleted(info.item.key)}
+                />
+            )}
+        />
     );
 };
 
@@ -25,4 +24,4 @@ const styles = StyleSheet.create({
     }
 });
  
-export default placeList;
+export default dogList;

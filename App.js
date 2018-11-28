@@ -15,16 +15,19 @@ export default class App extends Component {
   dogAddedHandler = dogName => {   
     this.setState(prevState => {
       return{
-        dogs: prevState.dogs.concat(dogName)
+        dogs: prevState.dogs.concat({
+          key: Math.random(),
+          value:dogName
+        })
       };
     });
   };
 
-  dogDeletedHandler = index => {
+  dogDeletedHandler = key => {
     this.setState(prevState => {
         return{
-          dogs: prevState.dogs.filter((dog, i) => {
-            return i !== index;
+          dogs: prevState.dogs.filter(dog => {
+            return dog.key !== key;
           })
         };
     });
