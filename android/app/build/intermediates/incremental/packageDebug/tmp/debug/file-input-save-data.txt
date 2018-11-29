@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Nov 27 20:07:37 CET 2018
+#Wed Nov 28 20:22:37 CET 2018
 23.set=NATIVE_RESOURCE
 2.base=C\:\\Users\\Katarina Grujic\\Desktop\\my-new-best-friend\\android\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
 15.set=NATIVE_RESOURCE
