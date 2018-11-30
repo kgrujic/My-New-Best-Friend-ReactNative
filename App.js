@@ -11,10 +11,11 @@ class App extends Component {
   
   dogAddedHandler = dogName => {   
     this.props.onAddDog(dogName);
+    console.log('dog added');
   };
 
-  placeDeletedHandler = () => {
-    this.props.deleteDog();
+  dogDeletedHandler = () => {
+    this.props.onDeleteDog();
   }
 
   modalClosedHandler = () => {
@@ -30,7 +31,7 @@ class App extends Component {
       <View style={styles.container}>
         <DogDetail 
           selectedDog={this.props.selectedDog}
-          onItemDeleted={this.placeDeletedHandler} 
+          onItemDeleted={this.dogDeletedHandler} 
           onModalClosed={this.modalClosedHandler}
         />
         <DogInput onDogAdded={this.dogAddedHandler} ></DogInput> 
