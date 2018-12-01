@@ -4,6 +4,7 @@ ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\m
 INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:1-26:12
 INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:1-26:12
 INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:1-26:12
+MERGED from [:react-native-vector-icons] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.57.5] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\react-native-0.57.5.aar\a895a0479170163284299688b660cfdd\AndroidManifest.xml:2:1-15:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\498938610ec5e5400ddb0601d2b599a9\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\c47778160dbe85899e286a09db431937\AndroidManifest.xml:17:1-22:12
@@ -97,6 +98,8 @@ uses-sdk
 INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-vector-icons] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.57.5] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\react-native-0.57.5.aar\a895a0479170163284299688b660cfdd\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.57.5] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\react-native-0.57.5.aar\a895a0479170163284299688b660cfdd\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\498938610ec5e5400ddb0601d2b599a9\AndroidManifest.xml:20:5-44
