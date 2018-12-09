@@ -12,4 +12,5 @@ const RNRedux = () => (
     </Provider>
 );
 
+
 AppRegistry.registerComponent('MyNewBestFriend', () => RNRedux);

@@ -1,8 +1,8 @@
-import { ADD_DOG, DELETE_DOG, SELECT_DOG, DESELECT_DOG } from "../actions/actionTypes";
+import { ADD_DOG, DELETE_DOG} from "../actions/actionTypes";
 
 const initialState = {
-    dogs:[],
-    selectedDog: null
+    dogs:[]
+   
 };
 
 const reducer = (state = initialState, action) => {
@@ -24,25 +24,11 @@ const reducer = (state = initialState, action) => {
             return{
                 ...state,
                 dogs: state.dogs.filter(dog => {
-                    return dog.key !== state.selectedDog.key;
-                  }),
-                  selectedDog:null
+                    return dog.key !== action.dogKey;
+                  })               
                 
             };
         
-        case SELECT_DOG:
-            return{
-                ...state,
-                selectedDog: state.dogs.find(dog => {
-                    return dog.key === action.dogKey;
-                  })
-            };
-        
-        case DESELECT_DOG:
-            return{
-                ...state,
-                selectedDog: null
-            };
             
         default: 
             return state;

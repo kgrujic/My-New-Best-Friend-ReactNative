@@ -1,1 +1,1 @@
-export {addDog,deleteDog,selectDog,deselectDog} from './dogs';
+export {addDog,deleteDog} from './dogs';

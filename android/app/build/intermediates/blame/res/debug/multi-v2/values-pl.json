@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Katarina Grujic\\Desktop\\my-new-best-friend\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pl\\values-pl.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Katarina Grujic\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\75e11cfa35cbb61c86134ae38be1d2b8\\res\\values-pl\\values-pl.xml",
+                    "source": "C:\\Users\\Katarina Grujic\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\6b5fc5a01bb44caf4a503507d36abc52\\res\\values-pl\\values-pl.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Katarina Grujic\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\498938610ec5e5400ddb0601d2b599a9\\res\\values-pl\\values-pl.xml",
+                    "source": "C:\\Users\\Katarina Grujic\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\742fa0b17101d122e0ef08758f488f04\\res\\values-pl\\values-pl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

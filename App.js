@@ -1,73 +1,47 @@
-import React,{Component} from 'react';
-import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
-import {connect} from 'react-redux';
+import { Navigation } from 'react-native-navigation';
+import AuthScreen from './src/screens/Auth/Auth';
+import ShareDogScreen from './src/screens/ShareDog/ShareDog';
+import FindDogScreen from './src/screens/FindDog/FindDog';
+import DogDetailScreen from './src/screens/DogDetail/DogDetail';
+import SideDrawerScreen from './src/screens/SideDrawer/SideDrawer';
+import { Provider } from 'react-redux';
+import configureStore from './src/store/configureStore';
+import withReduxStoreWrapper from './src/store/withStore';
 
-import DogInput from './src/components/DogInput/DogInput';
-import DogList from './src/components/DogList/DogList';
-import DogDetail from './src/components/DogDetail/DogDetail';
-import {addDog,deleteDog,selectDog,deselectDog} from './src/store/actions/index';
 
-class App extends Component {
-  
-  dogAddedHandler = dogName => {   
-    this.props.onAddDog(dogName);
-    console.log('dog added');
-  };
 
-  dogDeletedHandler = () => {
-    this.props.onDeleteDog();
-  }
-
-  modalClosedHandler = () => {
-    this.props.onDeselectDog();
-  }
-
-  dogSelectedHandler = key => {
-    this.props.onSelectDog(key);
-  };
-
-  render() {
-    return (
-      <View style={styles.container}>
-        <DogDetail 
-          selectedDog={this.props.selectedDog}
-          onItemDeleted={this.dogDeletedHandler} 
-          onModalClosed={this.modalClosedHandler}
-        />
-        <DogInput onDogAdded={this.dogAddedHandler} ></DogInput> 
-        <DogList 
-          dogs={this.props.dogs}
-          onItemSelected = {this.dogSelectedHandler}
-        />
-      </View>
-    );
-  }
+const registerScreens = screens => {
+  const store = configureStore();
+  //screens.forEach(([ path, screen ]) => Navigation.registerComponent(path, () => withReduxStoreWrapper(screen, store)))
+  screens.forEach(([ path, screen ]) => Navigation.registerComponentWithRedux(path, () => screen, Provider, store))
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding:26,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-  },
+const screens = [["MyNewBestFriend.AuthScreen",AuthScreen ],["MyNewBestFriend.ShareDogScreen",ShareDogScreen],["MyNewBestFriend.FindDogScreen",FindDogScreen],["MyNewBestFriend.DogDetailScreen", DogDetailScreen]];
+registerScreens(screens);
+
+// Start a App
+Navigation.setRoot({
+  root: {
+    stack: {
+      id:'myStack',
+      children: [
+        {
+          component: {
+              name: 'MyNewBestFriend.AuthScreen',
+              passProps: {
+                text: ''
+              }
+            }
+        },
+      
+      ],
+      options: {
+        topBar: {
+          title: {
+            text: 'Login'
+          }
+        }
+      }
+    }
+  }
 });
-
-const mapStateToProps = state => {
-  return{
-    dogs: state.dogs.dogs,
-    selectedDog: state.dogs.selectedDog
-  };
-};
-
-const mapDispatchToProps = dispatch => {
-  return{
-    onAddDog:(name) => dispatch(addDog(name)),
-    onDeleteDog: () => dispatch(deleteDog()),
-    onSelectDog: (key) => dispatch(selectDog(key)),
-    onDeselectDog: () => dispatch(deselectDog())
-  };
-};
-
-export default connect(mapStateToProps,mapDispatchToProps)(App);
