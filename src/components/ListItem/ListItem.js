@@ -21,8 +21,8 @@ const styles = StyleSheet.create({
     },
     dogImage: {
         marginRight:8,
-        height:40,
-        width:40
+        height:60,
+        width:60
     }
 });
 export default listItem;

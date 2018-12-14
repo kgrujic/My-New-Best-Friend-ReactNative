@@ -13,6 +13,8 @@ const reducer = (state = initialState, action) => {
                 dogs: state.dogs.concat({
                     key: Math.random(),
                     name:action.dogName,
+                    age: action.dogAge,
+                    gender: action.dogGender,
                     image: {
                       uri: "https://i.pinimg.com/564x/b1/af/22/b1af22d4d1b0f7164472bcb3813ca647.jpg"
           

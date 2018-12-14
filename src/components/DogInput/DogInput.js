@@ -1,59 +1,48 @@
 import React, {Component} from 'react';
-import { View, StyleSheet,  TextInput, Button } from 'react-native';
+import { View, StyleSheet,  TextInput, Button, Text, Picker } from 'react-native';
+import { RadioButton } from 'react-native-paper';
+import DefaultInput from '../../components/UI/DefaultInput/DefaultInput';
 
-class PlaceInput extends Component{
+const dogInput = props => (   
+<View>
+  <View>
+    <DefaultInput 
+        placeholder="Dog Name" 
+        value={props.dogName}
+        onChangeText={props.onDogNameChangedText}
+      />
+
+      <DefaultInput    
+        placeholder="Dog Age"
+        value={props.dogAge}
+        onChangeText={props.onDogAgeChangedText}              
+      />
+  </View>
+
+  <View style={styles.radioContainer}>
+        <Picker       
+          style={{ height: 50, width: 200 }}
+          selectedValue={props.dogGender}
+          onValueChange={props.onDogGenderChanged}
+          >
+          <Picker.Item label="Male" value="Male" />
+          <Picker.Item label="Female" value="Female" />
+        </Picker>
+  </View>  
+</View>
+)
   
-  state = {
-      dogName: ""
-  };
-
-
-  dogNameChangedHandler = val => {
-      this.setState({
-      dogName:val
-    });
-  };
-
-
-  dogSubmitHandler = () => {
-    if(this.state.dogName.trim() === ""){
-        return;
-    }
-      this.props.onDogAdded(this.state.dogName);
-  };
-
-  render(){
-      return (
-        <View style={styles.inputContainer}>
-            <TextInput     
-                placeholder="An awesome dog"
-                value={this.state.dogName}
-                onChangeText={this.dogNameChangedHandler}
-                style={styles.dogInput}
-            />
-            
-            <Button title="Add" 
-              style={styles.dogButton} 
-              onPress={this.dogSubmitHandler}/>
-        </View>
-      );
-    }
-}
+     
+                    
 
 const styles = StyleSheet.create({
-    inputContainer:{
-        //flex: 1,
+      radioContainer:{
         width:"100%",
         flexDirection:"row",
-        justifyContent:"space-between",
+        //justifyContent:"space-between",
         alignItems:"center"
       },
-      dogInput:{
-        width:"70%"
-      },
-      dogButton:{
-        width:"30%"
-      },
+     
 });
 
-export default PlaceInput;
+export default dogInput;
