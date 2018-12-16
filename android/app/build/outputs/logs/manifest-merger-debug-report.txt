@@ -1,16 +1,22 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:1-26:12
-INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:1-26:12
-INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:1-26:12
-INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:1-26:12
+ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:1-33:12
+INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:1-33:12
+INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:1-33:12
+INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:1-33:12
 MERGED from [:react-native-vector-icons] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-image-picker] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-23:12
 MERGED from [:react-native-navigation] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-navigation\lib\android\app\build\intermediates\merged_manifests\reactNative57Debug\processReactNative57DebugManifest\merged\AndroidManifest.xml:2:1-17:12
 MERGED from [com.facebook.react:react-native:0.57.5] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\react-native-0.57.5.aar\1ff9e39396e2e1cac3a20c078f4d8626\AndroidManifest.xml:2:1-15:12
 MERGED from [com.github.wix-playground:ahbottomnavigation:2.4.5] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\ahbottomnavigation-2.4.5.aar\1772a41607930ee4c7a8502034f6644d\AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.support:design:27.1.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\22fe2a52212ff2d90a8dd5e8519f9315\AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.wix-playground:reflow-animator:1.0.4] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\reflow-animator-1.0.4.aar\642b74620b013d6bf638ccd232c9eae2\AndroidManifest.xml:2:1-12:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\742fa0b17101d122e0ef08758f488f04\AndroidManifest.xml:17:1-22:12
+MERGED from [:react-native-maps] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-maps\lib\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-12:12
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-maps-10.0.1.aar\6b8740947f27a3b767457d9da27457bf\AndroidManifest.xml:16:1-25:12
+MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-base-10.0.1.aar\e60a8ebb9449ff7ae1cf5f7a5a8f997f\AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-tasks-10.0.1.aar\76f99474c13d29cb4ac32dcb7842d6c3\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-basement-10.0.1.aar\b462a0e6857bddf75c6bbbd950c84d1e\AndroidManifest.xml:16:1-23:12
 MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\1eb0a9d978f11ee31629df2b7790d4d0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\5b5d9f7316c937175e823689b8d38ca7\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\5a399b46e8d1a2ffeb0affd90e4b199c\AndroidManifest.xml:17:1-22:12
@@ -29,30 +35,35 @@ MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\Katarina Gr
 MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\c40ac40a424bf16092b33814e2175b4f\AndroidManifest.xml:2:1-13:12
 MERGED from [org.webkit:android-jsc:r174650] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\d999af503c3814c157c4373754d02829\AndroidManifest.xml:1:1-3:12
 MERGED from [com.github.clans:fab:1.6.4] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\fab-1.6.4.aar\473f0dbb9053ceeac45c4ad5f53606c0\AndroidManifest.xml:2:1-14:12
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\ce570ebee018082bf7eaacbf88848e8b\AndroidManifest.xml:2:1-13:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\521b169f47a92c5570e55ecb25d80010\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\7a6a36c550aded797fc83860651ee503\AndroidManifest.xml:17:1-22:12
 MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\8950279723f5450cb806f2f9e296baf5\AndroidManifest.xml:2:1-9:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\c71ca3ae09a8a2212dbf335fbcbd947a\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\f6eee5b1f206b436a23b92f1c7fe798f\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:1-26:12
-INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:1-26:12
-INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:1-33:12
+INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:1-33:12
+INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:1-33:12
 	package
 		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:2:5-34
 		INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:1-26:12
+		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:1-33:12
 		INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:1-26:12
+		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:1-33:12
 		INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
 ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from [:react-native-maps] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-maps\lib\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:9:5-67
+MERGED from [:react-native-maps] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-maps\lib\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:9:5-67
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-maps-10.0.1.aar\6b8740947f27a3b767457d9da27457bf\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-maps-10.0.1.aar\6b8740947f27a3b767457d9da27457bf\AndroidManifest.xml:20:5-66
 	android:name
 		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:4:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
@@ -61,64 +72,96 @@ MERGED from [com.facebook.react:react-native:0.57.5] C:\Users\Katarina Grujic\.g
 MERGED from [com.facebook.react:react-native:0.57.5] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\react-native-0.57.5.aar\1ff9e39396e2e1cac3a20c078f4d8626\AndroidManifest.xml:11:5-78
 	android:name
 		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:5:22-75
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:6:5-78
+	android:name
+		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:6:22-76
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:7:5-65
+	android:name
+		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:7:22-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:8:1-76
+	android:name
+		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:8:18-74
 application
-ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:7:5-24:19
+ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:9:5-31:19
+MERGED from [:react-native-image-picker] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-image-picker] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-21:19
 MERGED from [:react-native-navigation] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-navigation\lib\android\app\build\intermediates\merged_manifests\reactNative57Debug\processReactNative57DebugManifest\merged\AndroidManifest.xml:11:5-15:19
 MERGED from [:react-native-navigation] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-navigation\lib\android\app\build\intermediates\merged_manifests\reactNative57Debug\processReactNative57DebugManifest\merged\AndroidManifest.xml:11:5-15:19
 MERGED from [com.facebook.react:react-native:0.57.5] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\react-native-0.57.5.aar\1ff9e39396e2e1cac3a20c078f4d8626\AndroidManifest.xml:13:5-20
 MERGED from [com.facebook.react:react-native:0.57.5] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\react-native-0.57.5.aar\1ff9e39396e2e1cac3a20c078f4d8626\AndroidManifest.xml:13:5-20
 MERGED from [com.github.wix-playground:ahbottomnavigation:2.4.5] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\ahbottomnavigation-2.4.5.aar\1772a41607930ee4c7a8502034f6644d\AndroidManifest.xml:11:5-20
 MERGED from [com.github.wix-playground:ahbottomnavigation:2.4.5] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\ahbottomnavigation-2.4.5.aar\1772a41607930ee4c7a8502034f6644d\AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-maps-10.0.1.aar\6b8740947f27a3b767457d9da27457bf\AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-maps-10.0.1.aar\6b8740947f27a3b767457d9da27457bf\AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-base-10.0.1.aar\e60a8ebb9449ff7ae1cf5f7a5a8f997f\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-base-10.0.1.aar\e60a8ebb9449ff7ae1cf5f7a5a8f997f\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-tasks-10.0.1.aar\76f99474c13d29cb4ac32dcb7842d6c3\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-tasks-10.0.1.aar\76f99474c13d29cb4ac32dcb7842d6c3\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-basement-10.0.1.aar\b462a0e6857bddf75c6bbbd950c84d1e\AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-basement-10.0.1.aar\b462a0e6857bddf75c6bbbd950c84d1e\AndroidManifest.xml:19:5-21:19
 MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\c40ac40a424bf16092b33814e2175b4f\AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\c40ac40a424bf16092b33814e2175b4f\AndroidManifest.xml:11:5-20
 MERGED from [org.webkit:android-jsc:r174650] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\d999af503c3814c157c4373754d02829\AndroidManifest.xml:2:3-17
 MERGED from [org.webkit:android-jsc:r174650] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\d999af503c3814c157c4373754d02829\AndroidManifest.xml:2:3-17
 MERGED from [com.github.clans:fab:1.6.4] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\fab-1.6.4.aar\473f0dbb9053ceeac45c4ad5f53606c0\AndroidManifest.xml:12:5-20
 MERGED from [com.github.clans:fab:1.6.4] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\fab-1.6.4.aar\473f0dbb9053ceeac45c4ad5f53606c0\AndroidManifest.xml:12:5-20
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\ce570ebee018082bf7eaacbf88848e8b\AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\ce570ebee018082bf7eaacbf88848e8b\AndroidManifest.xml:7:5-11:19
 	android:label
-		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:9:7-39
+		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:11:7-39
 	android:icon
-		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:10:7-41
+		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:12:7-41
 	android:allowBackup
-		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:11:7-34
+		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:13:7-34
 	android:theme
-		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:12:7-38
+		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:14:7-38
 	android:name
-		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:8:7-38
+		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:10:7-38
 activity#com.mynewbestfriend.MainActivity
-ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:13:7-22:18
+ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:15:7-24:18
 	android:label
-		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:15:9-41
+		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:17:9-41
 	android:windowSoftInputMode
-		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:17:9-51
+		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:19:9-51
 	android:configChanges
-		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:16:9-79
+		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:18:9-79
 	android:name
-		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:14:9-37
+		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:16:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:18:9-21:25
+ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:20:9-23:25
 action#android.intent.action.MAIN
-ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:19:13-65
+ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:21:13-65
 	android:name
-		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:19:21-62
+		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:21:21-62
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:20:13-73
+ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:22:13-73
 	android:name
-		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:20:23-70
+		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:22:23-70
+meta-data#com.google.android.geo.API_KEY
+ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:26:8-28:66
+	android:value
+		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:28:9-64
+	android:name
+		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:27:9-54
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:23:7-84
+ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:30:7-84
 MERGED from [:react-native-navigation] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-navigation\lib\android\app\build\intermediates\merged_manifests\reactNative57Debug\processReactNative57DebugManifest\merged\AndroidManifest.xml:12:9-14:40
 MERGED from [:react-native-navigation] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-navigation\lib\android\app\build\intermediates\merged_manifests\reactNative57Debug\processReactNative57DebugManifest\merged\AndroidManifest.xml:12:9-14:40
 	android:exported
 		ADDED from [:react-native-navigation] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-navigation\lib\android\app\build\intermediates\merged_manifests\reactNative57Debug\processReactNative57DebugManifest\merged\AndroidManifest.xml:14:13-37
 	android:name
-		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:23:17-81
+		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:30:17-81
 uses-sdk
 INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml
 MERGED from [:react-native-vector-icons] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-navigation] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-navigation\lib\android\app\build\intermediates\merged_manifests\reactNative57Debug\processReactNative57DebugManifest\merged\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-navigation] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-navigation\lib\android\app\build\intermediates\merged_manifests\reactNative57Debug\processReactNative57DebugManifest\merged\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.57.5] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\react-native-0.57.5.aar\1ff9e39396e2e1cac3a20c078f4d8626\AndroidManifest.xml:7:5-9:41
@@ -131,6 +174,16 @@ MERGED from [com.github.wix-playground:reflow-animator:1.0.4] C:\Users\Katarina 
 MERGED from [com.github.wix-playground:reflow-animator:1.0.4] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\reflow-animator-1.0.4.aar\642b74620b013d6bf638ccd232c9eae2\AndroidManifest.xml:8:5-10:41
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\742fa0b17101d122e0ef08758f488f04\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\742fa0b17101d122e0ef08758f488f04\AndroidManifest.xml:20:5-44
+MERGED from [:react-native-maps] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-maps\lib\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-maps] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-maps\lib\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-maps-10.0.1.aar\6b8740947f27a3b767457d9da27457bf\AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-maps-10.0.1.aar\6b8740947f27a3b767457d9da27457bf\AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-base-10.0.1.aar\e60a8ebb9449ff7ae1cf5f7a5a8f997f\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-base-10.0.1.aar\e60a8ebb9449ff7ae1cf5f7a5a8f997f\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-tasks-10.0.1.aar\76f99474c13d29cb4ac32dcb7842d6c3\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-tasks-10.0.1.aar\76f99474c13d29cb4ac32dcb7842d6c3\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-basement-10.0.1.aar\b462a0e6857bddf75c6bbbd950c84d1e\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-basement-10.0.1.aar\b462a0e6857bddf75c6bbbd950c84d1e\AndroidManifest.xml:17:5-42
 MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\1eb0a9d978f11ee31629df2b7790d4d0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\1eb0a9d978f11ee31629df2b7790d4d0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\5b5d9f7316c937175e823689b8d38ca7\AndroidManifest.xml:20:5-44
@@ -165,6 +218,8 @@ MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\Katarina Grujic\.gra
 MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\c40ac40a424bf16092b33814e2175b4f\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.clans:fab:1.6.4] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\fab-1.6.4.aar\473f0dbb9053ceeac45c4ad5f53606c0\AndroidManifest.xml:8:5-10:41
 MERGED from [com.github.clans:fab:1.6.4] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\fab-1.6.4.aar\473f0dbb9053ceeac45c4ad5f53606c0\AndroidManifest.xml:8:5-10:41
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\ce570ebee018082bf7eaacbf88848e8b\AndroidManifest.xml:5:5-43
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\ce570ebee018082bf7eaacbf88848e8b\AndroidManifest.xml:5:5-43
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\521b169f47a92c5570e55ecb25d80010\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\521b169f47a92c5570e55ecb25d80010\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\7a6a36c550aded797fc83860651ee503\AndroidManifest.xml:20:5-44
@@ -185,9 +240,53 @@ INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\sr
 		INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-IMPLIED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+provider#com.imagepicker.FileProvider
+ADDED from [:react-native-image-picker] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:12:9-20:20
+	android:grantUriPermissions
+		ADDED from [:react-native-image-picker] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:16:13-47
+	android:authorities
+		ADDED from [:react-native-image-picker] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:14:13-60
+	android:exported
+		ADDED from [:react-native-image-picker] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:15:13-37
+	android:name
+		ADDED from [:react-native-image-picker] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:13-56
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:react-native-image-picker] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:17:13-19:58
+	android:resource
+		ADDED from [:react-native-image-picker] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:19:17-55
+	android:name
+		ADDED from [:react-native-image-picker] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:18:17-67
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [:react-native-maps] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-maps\lib\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from [:react-native-maps] C:\Users\Katarina Grujic\Desktop\my-new-best-friend\node_modules\react-native-maps\lib\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:10:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-maps-10.0.1.aar\6b8740947f27a3b767457d9da27457bf\AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-maps-10.0.1.aar\6b8740947f27a3b767457d9da27457bf\AndroidManifest.xml:19:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-maps-10.0.1.aar\6b8740947f27a3b767457d9da27457bf\AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-maps-10.0.1.aar\6b8740947f27a3b767457d9da27457bf\AndroidManifest.xml:21:19-51
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-maps-10.0.1.aar\6b8740947f27a3b767457d9da27457bf\AndroidManifest.xml:21:52-75
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-base-10.0.1.aar\e60a8ebb9449ff7ae1cf5f7a5a8f997f\AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-base-10.0.1.aar\e60a8ebb9449ff7ae1cf5f7a5a8f997f\AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-base-10.0.1.aar\e60a8ebb9449ff7ae1cf5f7a5a8f997f\AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-base-10.0.1.aar\e60a8ebb9449ff7ae1cf5f7a5a8f997f\AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-basement-10.0.1.aar\b462a0e6857bddf75c6bbbd950c84d1e\AndroidManifest.xml:20:9-121
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\ce570ebee018082bf7eaacbf88848e8b\AndroidManifest.xml:8:9-10:69
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\ce570ebee018082bf7eaacbf88848e8b\AndroidManifest.xml:8:9-10:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-basement-10.0.1.aar\b462a0e6857bddf75c6bbbd950c84d1e\AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\Katarina Grujic\.gradle\caches\transforms-1\files-1.1\play-services-basement-10.0.1.aar\b462a0e6857bddf75c6bbbd950c84d1e\AndroidManifest.xml:20:20-65
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+IMPLIED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:1-33:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
+IMPLIED from C:\Users\Katarina Grujic\Desktop\my-new-best-friend\android\app\src\main\AndroidManifest.xml:1:1-33:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE

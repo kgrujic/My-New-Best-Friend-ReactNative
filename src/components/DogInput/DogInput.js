@@ -8,13 +8,17 @@ const dogInput = props => (
   <View>
     <DefaultInput 
         placeholder="Dog Name" 
-        value={props.dogName}
+        value={props.dogName.value}
+        valid={props.dogName.valid}
+        touched={props.dogName.touched}
         onChangeText={props.onDogNameChangedText}
       />
 
       <DefaultInput    
         placeholder="Dog Age"
-        value={props.dogAge}
+        value={props.dogAge.value}
+        valid={props.dogAge.valid}
+        touched={props.dogAge.touched}
         onChangeText={props.onDogAgeChangedText}              
       />
   </View>
@@ -22,7 +26,7 @@ const dogInput = props => (
   <View style={styles.radioContainer}>
         <Picker       
           style={{ height: 50, width: 200 }}
-          selectedValue={props.dogGender}
+          selectedValue={props.dogGender.value}
           onValueChange={props.onDogGenderChanged}
           >
           <Picker.Item label="Male" value="Male" />
@@ -30,7 +34,7 @@ const dogInput = props => (
         </Picker>
   </View>  
 </View>
-)
+);
   
      
                     

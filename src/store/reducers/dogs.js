@@ -15,8 +15,9 @@ const reducer = (state = initialState, action) => {
                     name:action.dogName,
                     age: action.dogAge,
                     gender: action.dogGender,
+                    location: action.location,
                     image: {
-                      uri: "https://i.pinimg.com/564x/b1/af/22/b1af22d4d1b0f7164472bcb3813ca647.jpg"
+                      uri: action.image.uri
           
                     }
                   })

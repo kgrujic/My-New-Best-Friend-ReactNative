@@ -1,11 +1,13 @@
 import {ADD_DOG,DELETE_DOG} from './actionTypes';
 
-export const addDog = (dogName,dogAge,dogGender) => {
+export const addDog = (dogName,dogAge,dogGender,location,image) => {
     return{
         type: ADD_DOG,
         dogName: dogName,
         dogAge: dogAge,
-        dogGender:dogGender
+        dogGender:dogGender,
+        location: location,
+        image:image
     };
 };
 

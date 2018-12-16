@@ -9,35 +9,135 @@ import HeadingText from  '../../components/UI/HeadingText/HeadingText';
 import PickImage from '../../components/PickImage/PickImage';
 import PickLocation from '../../components/PickLocation/PickLocation';
 import backgroundImage from '../../assets/paws4.jpg';
+import validate from "../../utility/validation";
 
 class ShareDogScreen extends Component{
     state = {
-        dogName: "",
-        dogAge: "",
-        dogGender:""
-    };
+        controls:{
+            dogName: {
+                value:"",
+                valid:false,
+                touched:false,
+                validationRules:{
+                    notEmpty:true
+                }
+            },
+            dogAge:{
+                value:"",
+                valid:false,
+                touched:false,
+                validationRules:{
+                    isNumber:true
+                }
+            },
+            dogGender:{
+                value:""
+            },
+            location:{
+                value:null,
+                valid:false
+            },
+            image:{
+                value:null,
+                valid:false
+            } 
+    }   
+};
 
     dogNameChangedHandler = val => {
-        this.setState({
-           dogName:val 
+        this.setState(prevState => {
+            return{
+                controls:{
+                    ...prevState.controls,
+                    dogName:{
+                        ...prevState.controls.dogName,
+                        value:val,
+                        valid:validate(val,prevState.controls.dogName.validationRules),
+                        touched:true
+                    }
+                }
+            };
         });
+        console.log(this.state.controls.dogName.value);
     }
     dogAgeChangedHandler = val => {
-        this.setState({
-           dogAge:val 
+        // this.setState({
+        //     controls:{ 
+        //         dogAge:val 
+        //     }
+          
+        // });
+        this.setState(prevState => {
+            return{
+                controls:{
+                    ...prevState.controls,
+                    dogAge:{
+                        ...prevState.controls.dogAge,
+                        value:val,
+                        valid:true,
+                        touched:true                  
+                    }
+                }
+            };
         });
+        console.log(this.state.controls.dogAge.value);
     }
 
     dogGenderChangedHandler = (itemValue, itemIndex) =>{
-        this.setState({
-            dogGender: itemValue
+        // this.setState({
+        //     controls:{
+        //         dogGender: {
+        //            value: itemValue
+        //         }
+        //     }
+           
+        // });
+        this.setState(prevState => {
+            return{
+                controls:{
+                    ...prevState.controls,
+                    dogGender:{
+                        ...prevState.controls.dogGender,
+                        value:itemValue,
+                    
+                    }
+                }
+            };
+        });
+    }
+
+    locationPickedHandler = location => {
+        this.setState(prevState => {
+           return{
+               controls:{
+                   ...prevState.controls,
+                    location:{
+                        value: location,
+                        valid:true
+                    }
+               }
+           }
+        });
+    }
+
+    imagePickedHandler = image => {
+        this.setState(prevState =>{
+            return{
+                controls:{
+                    ...prevState.controls,
+                    image:{
+                        value:image,
+                        valid:true
+                    }
+                }
+            };
         });
     }
   
     dogAddedHandler = () => {
-        if(this.state.dogName.trim() !== ""){
-            this.props.onAddDog(this.state.dogName,this.state.dogAge,this.state.dogGender);
-        }      
+       
+        this.props.onAddDog(this.state.controls.dogName.value,this.state.controls.dogAge.value,this.state.controls.dogGender.value, this.state.controls.location.value,this.state.controls.image.value);
+      
     }
 
     render(){
@@ -51,20 +151,20 @@ class ShareDogScreen extends Component{
                         </HeadingText>
                     </MainText>
 
-                   <PickImage />
+                   <PickImage onImagePicked={this.imagePickedHandler} />
 
-                   <PickLocation />
+                   <PickLocation onLocationPick={this.locationPickedHandler}/>
                     
                     <DogInput 
-                        dogName ={this.state.dogName} 
-                        dogAge ={this.state.dogAge}
-                        dogGender={this.state.dogGender}
+                        dogName ={this.state.controls.dogName} 
+                        dogAge ={this.state.controls.dogAge}
+                        dogGender={this.state.controls.dogGender}
                         onDogNameChangedText={this.dogNameChangedHandler}
                         onDogAgeChangedText ={this.dogAgeChangedHandler}
                         onDogGenderChanged = {this.dogGenderChangedHandler}
                     />
                     <View style={styles.button}>
-                        <Button title="Share dog" onPress={this.dogAddedHandler}/>
+                        <Button title="Share dog" onPress={this.dogAddedHandler} disabled={!this.state.controls.dogName.valid} />
                     </View>
                 </View>
                 </ImageBackground>
@@ -100,7 +200,7 @@ const styles = StyleSheet.create({
 
 const mapDispatchToProps = dispatch => {
     return{
-        onAddDog: (dogName,dogAge,dogGender) => dispatch(addDog(dogName,dogAge,dogGender))
+        onAddDog: (dogName,dogAge,dogGender,location,image) => dispatch(addDog(dogName,dogAge,dogGender,location,image))
     };
 };
 
