@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { View,Text, TextInput, Button, StyleSheet, ScrollView, ImageBackground } from 'react-native';
+import { View, Text, TextInput, Button, StyleSheet, ScrollView, ImageBackground, ActivityIndicator } from 'react-native';
 import { connect } from 'react-redux';
 
 import { addDog } from '../../store/actions/index';
@@ -151,6 +151,10 @@ class ShareDogScreen extends Component{
     }
 
     render(){
+        let submitButton =  (<Button title="Share dog" onPress={this.dogAddedHandler} disabled={!this.state.controls.dogName.valid} />);
+        if(this.props.isLoading){
+           submitButton = <ActivityIndicator/>
+        }
         return(
             <ScrollView>
                <ImageBackground source={backgroundImage} style={styles.backgroundImage}>
@@ -174,7 +178,7 @@ class ShareDogScreen extends Component{
                         onDogGenderChanged = {this.dogGenderChangedHandler}
                     />
                     <View style={styles.button}>
-                        <Button title="Share dog" onPress={this.dogAddedHandler} disabled={!this.state.controls.dogName.valid} />
+                       {submitButton}
                     </View>
                 </View>
                 </ImageBackground>
@@ -208,11 +212,17 @@ const styles = StyleSheet.create({
     }
 });
 
+const mapStateToProps = state => {
+    return{
+        isLoading: state.ui.isLoading
+    };
+};
+
 const mapDispatchToProps = dispatch => {
     return{
         onAddDog: (dogName,dogAge,dogGender,location,city,image) => dispatch(addDog(dogName,dogAge,dogGender,location,city,image))
     };
 };
 
- export default connect(null, mapDispatchToProps)(ShareDogScreen);
+ export default connect(mapStateToProps, mapDispatchToProps)(ShareDogScreen);
 //export default ShareDogScreen;

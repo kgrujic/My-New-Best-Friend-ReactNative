@@ -1,9 +1,11 @@
 import {createStore, combineReducers, compose, applyMiddleware} from 'redux';
 import dogsReducer from './reducers/dogs';
+import uiReducer from './reducers/ui';
 import thunk from 'redux-thunk';
 
 const rootReducer = combineReducers({
-    dogs: dogsReducer
+    dogs: dogsReducer,
+    ui: uiReducer
 });
 
 let composeEnhancers = compose;
