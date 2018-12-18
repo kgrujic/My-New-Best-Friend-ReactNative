@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import MapView from 'react-native-maps';
 import {View, Image, Button, StyleSheet, Text, Dimensions} from 'react-native';
 
+
 class PickLocation extends Component{
     state = {
         focusedLocation:{
@@ -32,6 +33,10 @@ class PickLocation extends Component{
             };
         });
         this.props.onLocationPick({
+            // love you <3 love you too bubu <3 prepao si me hahaha gledam sta se desava
+            // nisam to ja to je bill gates iz groba huhuhuhuh
+            // nastavio je da zivi u window racunarima nooooo pojebalo se nesto sa ovim preimenovanjem 
+            // kako bebo nzm negde se iygleda referencira na to sad cu da vidim a onaj object je undefined
             latitude:coords.latitude,
             longitude:coords.longitude
         });

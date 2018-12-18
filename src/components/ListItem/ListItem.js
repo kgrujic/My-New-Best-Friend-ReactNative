@@ -6,6 +6,7 @@ const listItem = (props) => (
         <View style={styles.listItem}>
             <Image resizeMode="cover" source={props.dogImage} style={styles.dogImage} />
             <Text>{props.dogName}</Text>
+            <Text>{ props.city}</Text>
         </View>
     </ TouchableOpacity>
 );

@@ -15,6 +15,8 @@ import com.reactnativenavigation.react.ReactGateway;
 
 import com.airbnb.android.react.maps.MapsPackage;
 import com.imagepicker.ImagePickerPackage;
+import com.devfd.RNGeocoder.RNGeocoderPackage; 
+
 
 import java.util.Arrays;
 import java.util.List;
@@ -44,7 +46,9 @@ public class MainApplication extends NavigationApplication {
             // eg. new VectorIconsPackage()
             new VectorIconsPackage(),
             new MapsPackage(),
-            new ImagePickerPackage()
+            new ImagePickerPackage(),
+            new RNGeocoderPackage() 
+          
         );
     }
  

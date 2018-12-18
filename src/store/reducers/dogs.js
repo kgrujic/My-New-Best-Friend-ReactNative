@@ -16,6 +16,7 @@ const reducer = (state = initialState, action) => {
                     age: action.dogAge,
                     gender: action.dogGender,
                     location: action.location,
+                    city: action.city,
                     image: {
                       uri: action.image.uri
           

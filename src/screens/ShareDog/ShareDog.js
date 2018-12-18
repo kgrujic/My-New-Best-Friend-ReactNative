@@ -10,6 +10,8 @@ import PickImage from '../../components/PickImage/PickImage';
 import PickLocation from '../../components/PickLocation/PickLocation';
 import backgroundImage from '../../assets/paws4.jpg';
 import validate from "../../utility/validation";
+import Geocoder from 'react-native-geocoder-reborn';
+
 
 class ShareDogScreen extends Component{
     state = {
@@ -35,14 +37,16 @@ class ShareDogScreen extends Component{
             },
             location:{
                 value:null,
-                valid:false
+                valid:false,            
             },
+            city: "",
             image:{
                 value:null,
                 valid:false
             } 
     }   
 };
+
 
     dogNameChangedHandler = val => {
         this.setState(prevState => {
@@ -106,19 +110,25 @@ class ShareDogScreen extends Component{
         });
     }
 
-    locationPickedHandler = location => {
-        this.setState(prevState => {
-           return{
-               controls:{
-                   ...prevState.controls,
+    locationPickedHandler = location =>
+        Geocoder.geocodePosition({lat:location.latitude,lng:location.longitude}).then((res) => {
+            
+            this.setState(prevState => {  
+                return{
+                controls:{
+                    ...prevState.controls,
                     location:{
                         value: location,
-                        valid:true
-                    }
-               }
-           }
+                        valid:true,
+                       
+                    },
+                    city: res[3].locality || res[3].adminArea,
+                }
+            };                         
         });
-    }
+       console.log(this.state.controls.city);
+    })
+    .catch(console.log);
 
     imagePickedHandler = image => {
         this.setState(prevState =>{
@@ -136,7 +146,7 @@ class ShareDogScreen extends Component{
   
     dogAddedHandler = () => {
        
-        this.props.onAddDog(this.state.controls.dogName.value,this.state.controls.dogAge.value,this.state.controls.dogGender.value, this.state.controls.location.value,this.state.controls.image.value);
+        this.props.onAddDog(this.state.controls.dogName.value,this.state.controls.dogAge.value,this.state.controls.dogGender.value, this.state.controls.location.value,this.state.controls.city,this.state.controls.image.value);
       
     }
 
@@ -200,7 +210,7 @@ const styles = StyleSheet.create({
 
 const mapDispatchToProps = dispatch => {
     return{
-        onAddDog: (dogName,dogAge,dogGender,location,image) => dispatch(addDog(dogName,dogAge,dogGender,location,image))
+        onAddDog: (dogName,dogAge,dogGender,location,city,image) => dispatch(addDog(dogName,dogAge,dogGender,location,city,image))
     };
 };
 
