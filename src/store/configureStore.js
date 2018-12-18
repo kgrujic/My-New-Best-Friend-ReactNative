@@ -1,5 +1,6 @@
-import {createStore, combineReducers, compose} from 'redux';
+import {createStore, combineReducers, compose, applyMiddleware} from 'redux';
 import dogsReducer from './reducers/dogs';
+import thunk from 'redux-thunk';
 
 const rootReducer = combineReducers({
     dogs: dogsReducer
@@ -12,7 +13,7 @@ if(__DEV__){
 }
 
 const configureStore = () => {
-    return createStore(rootReducer,composeEnhancers());
+    return createStore(rootReducer,composeEnhancers(applyMiddleware(thunk)));
 };
 
 export default configureStore;
