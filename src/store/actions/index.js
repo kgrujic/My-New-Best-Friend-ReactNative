@@ -1,4 +1,4 @@
-export {addDog,deleteDog} from './dogs';
+export {addDog,deleteDog,getDogs} from './dogs';
 
 export {tryAuth} from './auth';
 

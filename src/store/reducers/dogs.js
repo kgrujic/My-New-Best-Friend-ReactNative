@@ -1,4 +1,4 @@
-import { ADD_DOG, DELETE_DOG} from "../actions/actionTypes";
+import {SET_DOGS, REMOVE_DOG } from "../actions/actionTypes";
 
 const initialState = {
     dogs:[]
@@ -7,33 +7,20 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
     switch(action.type){
-        case ADD_DOG: 
+          
+        case SET_DOGS:
             return {
                 ...state,
-                dogs: state.dogs.concat({
-                    key: Math.random(),
-                    name:action.dogName,
-                    age: action.dogAge,
-                    gender: action.dogGender,
-                    location: action.location,
-                    city: action.city,
-                    image: {
-                      uri: action.image.uri
-          
-                    }
-                  })
-            };
-        
-        case DELETE_DOG:
+                dogs: action.dogs
+            }
+        case REMOVE_DOG:
             return{
                 ...state,
                 dogs: state.dogs.filter(dog => {
-                    return dog.key !== action.dogKey;
-                  })               
-                
+                    return dog.key !== action.key;
+                  })                        
             };
-        
-            
+                 
         default: 
             return state;
         

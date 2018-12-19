@@ -1,5 +1,5 @@
-export const ADD_DOG = 'ADD_DOG';
-export const DELETE_DOG = 'DELETE_DOG';
+export const SET_DOGS = 'SET_DOGS';
+export const REMOVE_DOG = 'REMOVE_DOG';
 
 export const TRY_AUTH = 'TRY_AUTH';
 

@@ -5,18 +5,24 @@ import {Navigation } from 'react-native-navigation';
 import backgroundImage from '../../assets/kami.jpg';
 
 import DogList from '../../components/DogList/DogList';
+import {getDogs} from '../../store/actions/index';
 
 class FindDogScreen extends Component{
 
     state = {
         dogsLoaded:false,
-        removeAnim: new Animated.Value(1)
-    }
+        removeAnim: new Animated.Value(1),
+        dogsAnim: new Animated.Value(0)
+    };
 
     constructor(props){
         super(props);
         this.isSideDrawerVisible = false;
         Navigation.events().bindComponent(this);
+    }
+
+    componentDidMount(){
+        this.props.onLoadDogs();
     }
 
     navigationButtonPressed({ buttonId }) {
@@ -33,8 +39,12 @@ class FindDogScreen extends Component{
     }
 
     dogsLoadedHandler = () => {
-
-    }
+        Animated.timing(this.state.dogsAnim,{
+            toValue:1,
+            duration: 500,
+            useNativeDriver: true
+        }).start();
+    };
 
     dogsSearchHandler = () => {
        Animated.timing(this.state.removeAnim,{
@@ -104,11 +114,7 @@ class FindDogScreen extends Component{
     }
 }
 
-const mapStateToProps = state => {
-    return{
-        dogs: state.dogs.dogs
-    };
-};
+
 
 const styles = StyleSheet.create({
     backgroundImage:{
@@ -137,5 +143,17 @@ const styles = StyleSheet.create({
     
 });
 
-export default connect(mapStateToProps)(FindDogScreen);
+const mapStateToProps = state => {
+    return{
+        dogs: state.dogs.dogs
+    };
+};
+
+const mapDispatchToProps = dispatch => {
+      return {
+          onLoadDogs: () => dispatch(getDogs())
+      };  
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(FindDogScreen);
 //export default FindDogScreen;

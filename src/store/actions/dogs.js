@@ -1,4 +1,4 @@
-import {ADD_DOG,DELETE_DOG} from './actionTypes';
+import {SET_DOGS, REMOVE_DOG} from './actionTypes';
 import {uiStartLoading, uiStopLoading} from './index';
 export const addDog = (dogName,dogAge,dogGender,location,city,image) => {
 
@@ -43,10 +43,59 @@ export const addDog = (dogName,dogAge,dogGender,location,city,image) => {
     };
 };
 
-export const deleteDog = (key) => {
-    return{
-        type: DELETE_DOG,
-        dogKey: key  
+export const getDogs = () => {
+    return dispatch => {
+        fetch("https://my-new-best-frie-1544880240576-6ea8c.firebaseio.com/dogs.json")
+        .catch(err => {
+            console.log(err);
+            alert("Something went wrong, please try again!");
+        })
+        .then(res => res.json())
+        .then(parsedRes => {
+            const dogs =[];
+            for(let key in parsedRes){
+                dogs.push({
+                    ...parsedRes[key],
+                    image:{
+                        uri: parsedRes[key].image
+                    },
+                    key: key
+                })
+            }
+            dispatch(setDogs(dogs));
+        });
     };
+
+};
+
+export const setDogs = dogs => {
+    return{
+        type: SET_DOGS,
+        dogs:dogs
+    }
 }
+
+export const deleteDog = (key) => {
+    return dispatch => {
+        dispatch(removeDog(key));
+        fetch("https://my-new-best-frie-1544880240576-6ea8c.firebaseio.com/dogs/" + key + ".json", {
+            method:"DELETE"
+        })
+        .catch(err => {
+            console.log(err);
+            alert("Something went wrong, please try again!");
+        })
+        .then(res => res.json())
+        .then(parsedRes => {
+            console.log("Done");
+        });
+    };
+};
+
+export const removeDog = key => {
+    return {
+        type: REMOVE_DOG,
+        key: key
+    };
+};
 
