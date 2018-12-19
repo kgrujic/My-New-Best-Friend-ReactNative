@@ -66,7 +66,7 @@ class PickLocation extends Component{
         let marker = null;
         if(this.state.locationChosen){
             marker = <MapView.Marker coordinate={this.state.focusedLocation}/>
-        }
+        } 
         return(
         <View style={styles.container}>
           <MapView 

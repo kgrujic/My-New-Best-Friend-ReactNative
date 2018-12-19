@@ -34,6 +34,25 @@ class DogDetail extends Component{
     }
 
     render(){
+        let isLocationSelected = 
+        (<MapView
+            initialRegion={{
+                ...this.props.selectedDog.location,
+                latitudeDelta:0.0122,
+                longitudeDelta:
+                    Dimensions.get("window").width / 
+                    Dimensions.get("window").height * 0.0122
+            }}
+            style={styles.map}>
+            <MapView.Marker coordinate={this.props.selectedDog.location} />
+        </MapView>);
+
+        if(this.props.selectedDog.location == null){
+            isLocationSelected= 
+            (<View>
+                <Text style={styles.ageGenderText}> Location is undefined </Text>
+            </View>);
+        }
         return(
         <ScrollView style={[
                 styles.container,
@@ -67,17 +86,7 @@ class DogDetail extends Component{
 
                 
                 <View style={styles.subContainer}>
-                    <MapView
-                        initialRegion={{
-                            ...this.props.selectedDog.location,
-                            latitudeDelta:0.0122,
-                            longitudeDelta:
-                                Dimensions.get("window").width / 
-                                Dimensions.get("window").height * 0.0122
-                        }}
-                        style={styles.map}>
-                        <MapView.Marker coordinate={this.props.selectedDog.location} />
-                    </MapView>
+                   {isLocationSelected}
                 </View>
 
           

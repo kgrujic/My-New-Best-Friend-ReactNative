@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import {View, Image, Button, StyleSheet} from 'react-native';
 import ImagePicker from 'react-native-image-picker';
+import fallbackImage from '../../assets/paws2.jpg';
 class PickImage extends Component{
 
     state={
@@ -23,10 +24,11 @@ class PickImage extends Component{
     }
 
     render(){
+        const { pickedImage } = this.state;
         return(
         <View style={styles.container}>
             <View style={styles.placeholder}>
-                <Image source={this.state.pickedImage} style={styles.previewImage}/>
+                <Image source={pickedImage || fallbackImage} style={styles.previewImage}/>
             </View>
 
             <View style={styles.button}>
