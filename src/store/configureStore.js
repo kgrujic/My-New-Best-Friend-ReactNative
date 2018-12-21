@@ -1,11 +1,14 @@
 import {createStore, combineReducers, compose, applyMiddleware} from 'redux';
 import dogsReducer from './reducers/dogs';
 import uiReducer from './reducers/ui';
+import authReducer from './reducers/auth';
+
 import thunk from 'redux-thunk';
 
 const rootReducer = combineReducers({
     dogs: dogsReducer,
-    ui: uiReducer
+    ui: uiReducer,
+    auth: authReducer
 });
 
 let composeEnhancers = compose;

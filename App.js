@@ -8,6 +8,7 @@ import { Provider } from 'react-redux';
 import configureStore from './src/store/configureStore';
 import withReduxStoreWrapper from './src/store/withStore';
 import Icon from 'react-native-vector-icons/Ionicons';
+import React,{Component} from 'react';
 
 
 const registerScreens = screens => {
@@ -20,7 +21,8 @@ const screens = [["MyNewBestFriend.AuthScreen",AuthScreen ],["MyNewBestFriend.Sh
 registerScreens(screens);
 
 // Start a App
-Promise.all([
+//TO DO export
+ Promise.all([
   Icon.getImageSource('md-paw',30)
 ]).then((sources) => {
   Navigation.setRoot({
@@ -52,3 +54,7 @@ Promise.all([
     }
   });
 });
+
+
+
+
