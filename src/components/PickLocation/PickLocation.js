@@ -4,15 +4,22 @@ import {View, Image, Button, StyleSheet, Text, Dimensions} from 'react-native';
 
 
 class PickLocation extends Component{
-    state = {
-        focusedLocation:{
-            latitude:45.2671,
-            longitude: 19.8335,
-            latitudeDelta:0.0122,
-            longitudeDelta: Dimensions.get("window").width / Dimensions.get("window").height * 0.0122
+    
+    componentWillMount(){
+        this.reset();
+    }
 
-        },
-        locationChosen:false
+    reset = () => {
+        this.setState({
+            focusedLocation:{
+                latitude:45.2671,
+                longitude: 19.8335,
+                latitudeDelta:0.0122,
+                longitudeDelta: Dimensions.get("window").width / Dimensions.get("window").height * 0.0122
+    
+            },
+            locationChosen:false
+        });
     }
 
     pickLocationHandler = event => {
@@ -71,6 +78,7 @@ class PickLocation extends Component{
         <View style={styles.container}>
           <MapView 
                 initialRegion={this.state.focusedLocation}
+                region={!this.state.locationChosen ? this.state.focusedLocation : null}
                 style={styles.map}
                 onPress={this.pickLocationHandler}
                 ref={ref => this.map = ref}>

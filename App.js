@@ -9,6 +9,7 @@ import configureStore from './src/store/configureStore';
 import withReduxStoreWrapper from './src/store/withStore';
 import Icon from 'react-native-vector-icons/Ionicons';
 import React,{Component} from 'react';
+import startAuth from './src/screens/MainTabs/startAuth';
 
 
 const registerScreens = screens => {
@@ -18,42 +19,47 @@ const registerScreens = screens => {
 }
 
 const screens = [["MyNewBestFriend.AuthScreen",AuthScreen ],["MyNewBestFriend.ShareDogScreen",ShareDogScreen],["MyNewBestFriend.FindDogScreen",FindDogScreen],["MyNewBestFriend.DogDetailScreen", DogDetailScreen],["MyNewBestFriend.SideMenuScreen", SideMenuScreen]];
-registerScreens(screens);
+ registerScreens(screens);
+
+startAuth();
 
 // Start a App
 //TO DO export
- Promise.all([
-  Icon.getImageSource('md-paw',30)
-]).then((sources) => {
-  Navigation.setRoot({
-    root: {
-      stack: {
-        id:'myStack',
-        children: [
-          {
-            component: {
-                name: 'MyNewBestFriend.AuthScreen',
-                passProps: {
-                  text: ''
-                }
-              }
-          },
+
+ 
+//   Promise.all([
+//   Icon.getImageSource('md-paw',30)
+// ]).then((sources) => {
+//   Navigation.setRoot({
+//     root: {
+//       stack: {
+//         id:'myStack',
+//         children: [
+//           {
+//             component: {
+//                 name: 'MyNewBestFriend.AuthScreen',
+//                 passProps: {
+//                   text: ''
+//                 }
+//               }
+//           },
         
-        ],
-        options: {
-          topBar: {
-            title: {
-              text: 'My New Best Friend',          
-            },
-            leftButtons:[{
-              icon: sources[0]
-            }],
-          }
-        }
-      }
-    }
-  });
-});
+//         ],
+//         options: {
+//           topBar: {
+//             title: {
+//               text: 'My New Best Friend',          
+//             },
+//             leftButtons:[{
+//               icon: sources[0]
+//             }],
+//           }
+//         }
+//       }
+//     }
+//   });
+// });
+
 
 
 

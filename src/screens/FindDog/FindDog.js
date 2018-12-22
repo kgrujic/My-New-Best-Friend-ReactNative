@@ -20,10 +20,17 @@ class FindDogScreen extends Component{
         this.isSideDrawerVisible = false;
         Navigation.events().bindComponent(this);
     }
-
-    componentDidMount(){
+    componentDidAppear() {
         this.props.onLoadDogs();
+        // this.setState({
+        //     dogsLoaded:false
+        // })
     }
+    
+
+    // componentDidMount(){
+    //     this.props.onLoadDogs();
+    // }
 
     navigationButtonPressed({ buttonId }) {
         if (buttonId === "openSideDrawer") {

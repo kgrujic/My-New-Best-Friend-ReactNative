@@ -3,7 +3,8 @@ import { AsyncStorage } from "react-native";
 import { TRY_AUTH, AUTH_SET_TOKEN, AUTH_REMOVE_TOKEN } from "./actionTypes";
 import { uiStartLoading, uiStopLoading } from "./index";
 import startMainTabs from "../../screens/MainTabs/startMainTabs";
-import App from '../../../App';
+import startAuth from "../../screens/MainTabs/startAuth";
+
 
 const API_KEY = "AIzaSyCoZUYU3SxuxyCDm4L0VfA4PIg9qwe3IYI";
 
@@ -169,7 +170,7 @@ export const authLogout = () => {
   return dispatch => {
     dispatch(authClearStorage())
       .then(() =>{
-        App();
+        startAuth();
       });
     dispatch(authRemoveToken());
  

@@ -50,7 +50,7 @@ class DogDetail extends Component{
         if(this.props.selectedDog.location == null){
             isLocationSelected= 
             (<View>
-                <Text style={styles.ageGenderText}> Location is undefined </Text>
+                <Text style={styles.ageGenderText}> Location is unknown </Text>
             </View>);
         }
         return(

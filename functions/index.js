@@ -61,6 +61,7 @@ exports.storeImage = functions.https.onRequest((request, response) => {
                 encodeURIComponent(file.name) +
                 "?alt=media&token=" +
                 uuid
+               
             });
           } else {
             console.log(err);
@@ -76,3 +77,13 @@ exports.storeImage = functions.https.onRequest((request, response) => {
     
   });
 });
+
+// exports.deleteImage = functions.database
+//   .ref("/dogs/{dogId}")
+//   .onDelete(event => {
+//     const dogData = event.data.previous.val();
+//     const imagePath = dogData.imagePath;
+
+//     const bucket = gcs.bucket("my-new-best-frie-1544880240576.appspot.com");
+//     return bucket.file(imagePath).delete();
+//   });

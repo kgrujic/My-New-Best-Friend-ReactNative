@@ -1,7 +1,8 @@
-import {SET_DOGS, REMOVE_DOG } from "../actions/actionTypes";
+import {SET_DOGS, REMOVE_DOG,DOG_ADDED, START_ADD_DOG } from "../actions/actionTypes";
 
 const initialState = {
-    dogs:[]
+    dogs:[],
+    dogAdded: false
    
 };
 
@@ -20,6 +21,16 @@ const reducer = (state = initialState, action) => {
                     return dog.key !== action.key;
                   })                        
             };
+        case DOG_ADDED:
+            return {
+                ...state,
+                dogAdded:true
+            }
+        case START_ADD_DOG:
+            return{
+                ...state,
+                dogAdded:false
+            }
                  
         default: 
             return state;
