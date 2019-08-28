@@ -2,35 +2,63 @@ import React,{Component} from 'react';
 import {View, Image, Button, StyleSheet} from 'react-native';
 import ImagePicker from 'react-native-image-picker';
 import fallbackImage from '../../assets/paws2.jpg';
+import Clarifai from 'clarifai';
+// import * as Clarifai from 'clarifai';
+// const Clarifai = require('clarifai');
+
 class PickImage extends Component{
+    
+    clarifaiApp = new Clarifai.App({
+        apiKey: '7dedcac98e024ded92fb70bf8c657414'
+    });
 
-    state={
-        pickedImage: null
-    }
-
-    reset = () => {
-        this.setState({
-            pickedImage: null
-        });
-    };
 
     pickImageHandler = () =>{
         ImagePicker.showImagePicker({title: "Pick an Image", maxWidth:800,maxHeight:600}, res => {
+            const imageData = {
+                base64:res.data,
+                uri: res.uri
+            }
+                    
             if(res.didCancel){
                 console.log("User cancelled");
             } else if(res.error){
                 console.log("Error", res.error);
             } else{
-                this.setState({
-                    pickedImage: { uri: res.uri }
-                });
-                this.props.onImagePicked({uri: res.uri, base64: res.data});
+                
+                this.identifyImage(imageData)
+                    .then(imgDataOrNull => {
+                        if (imgDataOrNull) {
+                            this.props.onImagePicked(imgDataOrNull)
+                        } else {
+                           alert('dog not found in image');
+                        }
+                    });
+                
+                   
+               
             }
         });
     }
 
+    identifyImage = (imageData) => {
+
+       
+        return this.clarifaiApp.models.predict(Clarifai.GENERAL_MODEL, {base64: imageData.base64})
+            .then((response) =>
+                response.outputs[0].data.concepts[0].name === "dog" ? imageData : null
+            )
+            .catch((err) => alert(err));
+    }
+
+
+
+    
+
     render(){
-        const { pickedImage } = this.state;
+        // const { pickedImage } = this.props;
+        const pickedImage = this.props.pickedImage;
+
         return(
         <View style={styles.container}>
             <View style={styles.placeholder}>

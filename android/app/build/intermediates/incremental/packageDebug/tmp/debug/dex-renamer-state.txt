@@ -1,4 +1,4 @@
-#Sun Dec 16 20:57:13 CET 2018
-base.0=C\:\\Users\\Katarina Grujic\\Desktop\\my-new-best-friend\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Mon Dec 24 12:44:57 CET 2018
+base.0=/home/katarina/Desktop/my-new-best-friend/android/app/build/intermediates/transforms/dexMerger/debug/0
 renamed.0=classes.dex
 path.0=classes.dex

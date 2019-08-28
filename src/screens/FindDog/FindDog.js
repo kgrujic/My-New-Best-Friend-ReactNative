@@ -12,14 +12,19 @@ class FindDogScreen extends Component{
     state = {
         dogsLoaded:false,
         removeAnim: new Animated.Value(1),
-        dogsAnim: new Animated.Value(0)
+        dogsAnim: new Animated.Value(0),
+        
     };
 
     constructor(props){
         super(props);
         this.isSideDrawerVisible = false;
         Navigation.events().bindComponent(this);
+
     }
+
+   
+    
     componentDidAppear() {
         this.props.onLoadDogs();
         // this.setState({
@@ -33,6 +38,8 @@ class FindDogScreen extends Component{
     // }
 
     navigationButtonPressed({ buttonId }) {
+     
+
         if (buttonId === "openSideDrawer") {
             (!this.isSideDrawerVisible) ? this.isSideDrawerVisible = true : this.isSideDrawerVisible = false
             Navigation.mergeOptions(this.props.componentId, {
@@ -43,6 +50,7 @@ class FindDogScreen extends Component{
              }
            });
           }
+
     }
 
     dogsLoadedHandler = () => {
@@ -84,6 +92,8 @@ class FindDogScreen extends Component{
        
     };
 
+  
+
     render(){
         let content = (
            <Animated.View
@@ -108,8 +118,9 @@ class FindDogScreen extends Component{
         );
 
         if(this.state.dogsLoaded){
-            content = (          
-                <DogList dogs={this.props.dogs} onItemSelected={this.itemSelectedHandler} />             
+            content = (             
+                      
+                <DogList dogs={this.props.dogs} onItemSelected={this.itemSelectedHandler} />                         
            
         );
       }

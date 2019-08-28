@@ -6,7 +6,8 @@ const startTabs = () => {
     Promise.all([ 
         Icon.getImageSource(Platform.OS === 'android' ? "md-map" : "ios-map", 30),
         Icon.getImageSource(Platform.OS === 'android' ? "md-add-circle" : "ios-add-circle",30),
-        Icon.getImageSource(Platform.OS === 'android' ? "md-menu" : "ios-menu", 30)
+        Icon.getImageSource(Platform.OS === 'android' ? "md-menu" : "ios-menu", 30),
+        Icon.getImageSource(Platform.OS === 'android' ? "md-refresh" : "ios-refresh", 30)
     ]).then(sources => {
         Navigation.setRoot({
             root: {
@@ -42,11 +43,14 @@ const startTabs = () => {
                           title: {
                             text: 'Find Dog'
                           }, 
-                          rightButtons:{
-                            id: 'openSideDrawer',
-                            icon:sources[2],
-                            color:"orange"
-                          },                  
+                          rightButtons:[
+                            {
+                              id: 'openSideDrawer',
+                              icon:sources[2],
+                              color:"orange"
+                            },
+                          
+                          ],                  
                         }
                       }
                     }

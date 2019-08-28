@@ -165,12 +165,14 @@ class ShareDogScreen extends Component{
 
         this.props.onAddDog(this.state.controls.dogName.value,this.state.controls.dogAge.value,this.state.controls.dogGender.value, this.state.controls.location.value,this.state.controls.city,this.state.controls.image.value || {uri: imagePrefix+imageData, base64:imageData});
         this.reset();
-        this.imagePicker.reset();
+        //this.imagePicker.reset();
         this.locationPicker.reset();
 
     }
 
     render(){
+        const { controls: { image: { value: pickedImage } } } = this.state;
+
         let submitButton =  (<Button title="Share dog" onPress={this.dogAddedHandler} disabled={!this.state.controls.dogName.valid} />);
         if(this.props.isLoading){
            submitButton = <ActivityIndicator/>
@@ -185,7 +187,7 @@ class ShareDogScreen extends Component{
                         </HeadingText>
                     </MainText>
 
-                   <PickImage onImagePicked={this.imagePickedHandler} ref={ref => this.imagePicker = ref}/>
+                   <PickImage pickedImage={pickedImage} onImagePicked={this.imagePickedHandler} ref={ref => this.imagePicker = ref}/>
 
                    <PickLocation onLocationPick={this.locationPickedHandler} ref={ref => this.locationPicker = ref}/>
                     
